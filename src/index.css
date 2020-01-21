@@ -1,11 +1,14 @@
 * {
     font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 table > thead > tr > td {
     font-weight: bold;
     padding: 10px;
-    min-width: 100px;
+    min-width: 50px;
     position: relative;
 }
 
@@ -22,4 +25,5 @@ table > thead > tr > td::after {
 table > tbody > tr > td {
     padding: 8px;
     padding-bottom: 0px;
+    padding-right: 15px;
 }
