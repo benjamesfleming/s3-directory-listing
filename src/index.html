@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://aws.amazon.com/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+
+    <title>AWS S3 Explorer</title>
+    
+    <script>
+        const S3_CONFIG = {
+            Region      : 'ap-southeast-2',
+            Bucket      : 'dl.benfleming.nz',
+            Prefix      : '',
+            Delimiter   : '/'
+        };
+    </script>
+</head>
+<body>
+    <table id="app">
+        <thead>
+            <tr>
+                <td>Last Modified</td>
+                <td>Size</td>
+                <td>Key</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
