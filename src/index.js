@@ -114,8 +114,11 @@ const main = async () => {
     }
 
     for (let { LastModified, Size, Key } of ListBucketResult.Contents) {
+        if (Key === 'index.html')
+            continue;
+
         insertHTML({ 
-            LastModified : moment(LastModified).format("MMM Do YYYY h:mm:ss a ZZ"), 
+            LastModified : moment(LastModified).format('MMM Do YYYY hh:mm:ss a ZZ'), 
             Size         : bytes2size(Size), 
             Key          : escapeHTML(Key), 
             Link         : key2href(Key) 
