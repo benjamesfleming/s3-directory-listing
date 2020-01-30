@@ -2,6 +2,7 @@
 
 List files and folders in a [AWS S3](https://aws.amazon.com/s3) bucket.
 
+View a live demo at [**https://dl.benfleming.nz**](https://dl.benfleming.nz).
 
 ### Installation
 
